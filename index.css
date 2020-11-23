@@ -27,7 +27,8 @@ body {
 
 .row {
     /*max-width: 1140px;*/
-    margin: 0 auto;                      /* for centering the row: top/buttom = auto, left/right = 0 */
+    margin: 0 auto;
+    /* for centering the row: top/buttom = auto, left/right = 0 */
 }
 
 section {
@@ -165,8 +166,9 @@ header {
     background-image: url(img/MainHeader.jpg);/*source Adobe Stock*/
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 95vh;
     background-attachment: fixed;
+    width: 100%;
 }
 
 .first-page-box {
@@ -180,10 +182,11 @@ header {
 }
 
 .logo {
-    height: 100px;
-    width: auto;
+    height: 70px;
+    width: 240px;
     float: left;
-    margin-top: 20%;
+    margin-right: 20vh;
+
 }
 
 .logo-black {
@@ -201,19 +204,25 @@ header {
     color: black;
     overflow: hidden;
     position: fixed;
-    background-color: rgba(217, 196, 184);
-    padding: 2%;
+    background-color: rgb(217, 196, 184);
+    padding: 1%;
     top: 0;
-    z-index: inherit;
+    z-index: 99;
 
 }
 
 .main-nav li {
     display: block;
     float: right;
-    margin-left: 10%;
+    margin-right: 2vw;
+    margin-left: 2vw;
+    /*border: 1px solid;*/
+    /*font-size: 2vw;*/
 
 }
+
+
+
 
 .main-nav li a:link,
 .main-nav li a:visited {
@@ -348,7 +357,7 @@ header {
 /* -----------------------------------------------REVIEWS -------------------------------------------------------*/
 
 .section-testimonials {
-    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)));
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
     background-size: cover;
     color: #fff;
@@ -643,8 +652,8 @@ footer p {
 
     .main-nav {
         float: left;
-        margin-top: 30px;
-        margin-left: 25px;
+        /*margin-top: 30px;*/
+        /*margin-left: 25px;*/
     }
 
     .main-nav li {
@@ -693,7 +702,8 @@ footer p {
     width:20% !important;
 }
 
-@media (max-width: 952px){
-    .first-page-box{                /*It would not show <section> with Confucious on mobile phone. To ban it for mobile phones*/
+@media (max-width: 952px) {
+    .first-page-box { /*It would not show <section> with Confucious on mobile phone. To ban it for mobile phones*/
         display: none;
     }
+}
